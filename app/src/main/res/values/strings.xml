@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BMI1.2</string>
+    <string name="mainhead">BMI</string>
+    <string name="height">Enter Height:</string>
+    <string name="weight">Enter Weight:</string>
+    <string name="heightb">(cm)</string>
+    <string name="weightb">(kg)</string>
+    <string name="submit">SUBMIT</string>
+    <string name="clear">CLEAR</string>
+    <string name="actual_bmi">BMI should be between 18 and 25</string>
+</resources>

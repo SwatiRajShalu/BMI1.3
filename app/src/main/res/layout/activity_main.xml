@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/teal_blue"
+        android:text="@string/mainhead"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="@color/grey"
+        android:gravity="center"/>
+    
+    <RelativeLayout
+        android:id="@+id/relativebody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_blue">
+
+        <TextView
+            android:id="@+id/height_text"
+            android:text="@string/height"
+            style="@style/TextHeightWeight"
+            android:layout_marginTop="100dp"/>
+        <EditText
+            android:id="@+id/height"
+            android:hint="@string/heightb"
+            style="@style/stylesqaurebox"
+            android:layout_toRightOf="@+id/height_text"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:id="@+id/weight_text"
+            android:text="@string/weight"
+            style="@style/TextHeightWeight"
+            android:layout_marginTop="175dp"/>
+        <EditText
+            android:id="@+id/weight"
+            android:hint="@string/weightb"
+            style="@style/stylesqaurebox"
+            android:layout_toRightOf="@+id/weight_text"
+            android:layout_marginTop="175dp"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_centerHorizontal="true">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="250dp"
+                android:background="@color/head"
+                android:text="@string/submit"
+                android:textColor="@color/grey"
+                android:textSize="16sp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/clear_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="250dp"
+                android:background="@color/head"
+                android:text="@string/clear"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+        </GridLayout>
+
+
+
+        <TextView
+            android:id="@+id/result1"
+            style="@style/TextHeightWeight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp"
+            android:text=""
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/result2"
+            android:text=""
+            style="@style/TextHeightWeight"
+            android:layout_marginTop="400dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/result3"
+            android:text=""
+            style="@style/TextHeightWeight"
+            android:layout_marginTop="430dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/grey"
+        android:text="@string/actual_bmi"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/head"/>
+
+
+</LinearLayout>
